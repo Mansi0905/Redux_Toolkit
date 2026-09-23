@@ -8,7 +8,9 @@ const App = () => {
   
   return (
     <div className='h-screen w-full text-white bg-gray-900'>
-      <button onClick={fetchPhotos}>GET PHOTOS</button>
+      <button onClick={()=>{
+        fetchPhotos('cat')
+      }}>GET PHOTOS</button>
       
     </div>
   )
