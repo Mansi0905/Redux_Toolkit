@@ -1,0 +1,2 @@
+a media search project where you can  search up different kind of photos, videos and gifs and here 
+ everything is fetched through tenor, pexels, unslapsh website therough thier apis, using teh redux toolkit for better state management
