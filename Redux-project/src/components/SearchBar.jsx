@@ -17,7 +17,13 @@ const submitHandler=(e)=>{
           submitHandler(e)
         }} className='flex bg-gray-700 gap-5  p-10'>
 
-            <input required
+            <input
+            value={text}
+            onChange={(e)=>{
+              setText(e.target.value)
+              
+            }}
+            required
             className=' w-full border-2 px-4 py-2 text-xl rounded outline-none'
             type="text" 
             placeholder='Search anything...' />
