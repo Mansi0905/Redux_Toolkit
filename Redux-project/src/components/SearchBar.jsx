@@ -1,12 +1,17 @@
 import React, { useState } from 'react'
+import {useDispatch} from 'react-redux'
+import { setQuery } from '../redux/features/searchSlice'
 
 const SearchBar = () => {
 
 const [text, setText] = useState('')
 
+const dispatch = useDispatch()
+
 const submitHandler=(e)=>{
   e.preventDefault()
-  console.log(text);
+  
+  dispatch(setQuery(text))
 
   setText(' ')
   
