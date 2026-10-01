@@ -6,7 +6,9 @@ const [text, setText] = useState('')
 
 const submitHandler=(e)=>{
   e.preventDefault()
-  console.log('form submitted');
+  console.log(text);
+
+  setText(' ')
   
 }
 
