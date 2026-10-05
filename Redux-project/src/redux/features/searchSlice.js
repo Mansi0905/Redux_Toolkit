@@ -1,8 +1,8 @@
 import {createSlice} from '@reduxjs/toolkit'
 
 const searchSlice=createSlice({
-    name :" search",
-    intialState:{
+    name :"search",
+    initialState:{
         query:'',
         activeTab:'photos',
         results:[],
