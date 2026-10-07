@@ -6,6 +6,11 @@ import { setQuery,SetLoading,setError,setResults } from '../redux/features/searc
 
 const ResultGrid = () => {
 
+ const {query,activeTab, results, loading,error} = useSelector((store)=> store.search)
+
+
+
+
  
   return (
     <div>
