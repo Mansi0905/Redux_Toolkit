@@ -9,14 +9,19 @@ const ResultGrid = () => {
 
  const {query,activeTab, results, loading,error} = useSelector((store)=> store.search)
 
-useEffect(function(){
+const getData=()=>{
 
-},[])
+  if(activeTab == 'photos'){
+    const data= fetchPhotos()
+    console.log(data);
+    
+  }
+}
 
  
   return (
     <div>
-
+      <button>GetData</button>
     </div>
   )
 }
