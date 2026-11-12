@@ -6,6 +6,7 @@ import { useEffect } from 'react';
 
 
 const ResultGrid = () => {
+  const dispatch = useDispatch()
 
  const {query,activeTab, results, loading,error} = useSelector((store)=> store.search)
 
@@ -34,7 +35,7 @@ const ResultGrid = () => {
         src: item.video_files[0].link,
       }))
     }
-    dispatchEvent(setResults(data))
+    dispatch(setResults(data))
   }
   getData()
 
