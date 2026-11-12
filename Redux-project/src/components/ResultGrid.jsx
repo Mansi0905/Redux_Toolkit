@@ -34,7 +34,7 @@ const ResultGrid = () => {
         src: item.video_files[0].link,
       }))
     }
-    console.log(data);
+    dispatchEvent(setResults(data))
   }
   getData()
 
